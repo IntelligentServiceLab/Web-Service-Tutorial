@@ -594,7 +594,7 @@
 
     ![image](https://github.com/user-attachments/assets/62c8b365-f629-491f-b65f-7dd0176f17af)
 
-    -呈现的效果如下：
+    - 呈现的效果如下：
 
     ![image](https://github.com/user-attachments/assets/c1fc69ce-94c1-4cec-9c31-63cad8eead0d)
 
