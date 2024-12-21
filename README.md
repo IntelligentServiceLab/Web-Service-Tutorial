@@ -551,13 +551,92 @@
   - JAVA 版
 
 ## 基于REST的服务开发
+- REST四种基本方法：
+
+  ![image](https://github.com/user-attachments/assets/2e710e5c-5737-4e46-9e11-1451206ce5e3)
+
 - 项目创建
+  
+    - 框架：Visual Studio 2022
+  
+    - 模板：ASP.NET Core Web API
+  
+    - 创建方式：
+        直接在Visual Studio 2022中选择ASP.NET Core Web 应用模板
+      
+        ![image](https://github.com/user-attachments/assets/247f3dd6-4d3d-4c5b-ac2b-c74b396f9b78)
+    - 整体项目目录
+      
+        ![image](https://github.com/user-attachments/assets/c7404888-1f33-4e94-bd2b-39ffdc5c322c)
+    
 - 服务实现
+  - 设计API
+    
+    设计想要设计的API，本项目举例设计一个计算器API，里面使用的是REST四种方法之一的GET方法
+    
+     ![image](https://github.com/user-attachments/assets/903f535f-afd3-479d-8622-d8d31aa6d125)
+
+     
   - 服务部署
+    
+    发布API
+    
+    ![image](https://github.com/user-attachments/assets/357438c2-df77-4dff-914f-7d57a46dcf87)
+
+    该API的默认地址：https://localhost:7166
+
+    ![image](https://github.com/user-attachments/assets/8e899046-de63-4125-ad3e-34474f0181ea)
+
   - 界面开发
+   
+    界面这里使用的是HTML网页
+    - HTML网页代码如下：
+
+    ![image](https://github.com/user-attachments/assets/62c8b365-f629-491f-b65f-7dd0176f17af)
+
+    -呈现的效果如下：
+
+    ![image](https://github.com/user-attachments/assets/c1fc69ce-94c1-4cec-9c31-63cad8eead0d)
+
   - 服务调用
     - 本地调用
+      
+      先确保本地API服务运行，再到浏览器或者使用Postman测试
+      1.浏览器：
+      
+      ![image](https://github.com/user-attachments/assets/2ea5d7e9-e572-425c-a2d5-f0a9453e524c)
+
+      2.Postman：
+ 
+      ![image](https://github.com/user-attachments/assets/8562bcc2-37b4-4ffd-bc3c-2431457cf771)
+
     - 网页调用
+
+      - 上传HTML网页到GitHub上，操作如下：
+      
+        1.在GitHub上创建一个新的仓库
+
+        ![image](https://github.com/user-attachments/assets/d324966b-44a2-41cc-9061-9d5dba7335e9)
+
+        2.将HTML文件推送到仓库中
+
+        ![image](https://github.com/user-attachments/assets/2e84eaaf-5888-4100-af51-527eeeb10ed0)
+
+        3.在仓库的setting中启用GitHub Pages将其设置为从main分支中提供文件：
+
+        ![image](https://github.com/user-attachments/assets/f45b5b3b-362f-4ce3-b366-bfa9eca44989)
+
+        4.HTML网页将通过GitHub Pages提供服务，这里的URL为：
+
+        ![image](https://github.com/user-attachments/assets/6d513c95-0e27-4bbb-ae32-41963ac59050)
+
+      - 将API部署到服务器
+
+          1.部署到传统服务器，列如：Apache、Nginx等web服务器
+
+          2.部署到云服务，列如：AWS、Azure、Google Cloud、Heroku、Vercel等平台
+
+          部署后有一个公网可以访问的URL，将这个URL替换到HTML中的API调用地址，即可实现网页调用
 
 ## Web服务组合
 
